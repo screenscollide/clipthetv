@@ -1,0 +1,51 @@
+doctype 5
+html(lang="en")
+  head
+    title Clip The TV
+
+    meta(name="gtv-autozoom", content="off")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    link(rel='stylesheet', href='/css/twitter/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='http://bootswatch.com/cyborg/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/twitter/bootstrap-responsive.min.css')
+    
+    
+    link(rel="stylesheet", href="http://ghusse.github.com/jQRangeSlider/stable/demo/lib/jquery-ui/css/smoothness/jquery-ui-1.8.10.custom.css")
+    link(rel="stylesheet", href="/css/jQRangeSlider/classic.css")
+    //Slider Styling
+    //link(rel="stylesheet", href="/css/jQRangeSlider/iThing.css")
+
+    script(type="text/javascript", charset="utf-8", src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js")
+    script(type="text/javascript", charset="utf-8", src="http://ghusse.github.com/jQRangeSlider/stable/demo/lib/jquery-ui/js/jquery-ui-1.8.16.custom.min.js")
+    
+    script(type="text/javascript", charset="utf-8", src="/js/plugins/twitter/bootstrap.min.js")
+    script(type="text/javascript", src='/socket.io/socket.io.js')
+
+    script(type="text/javascript", charset="utf-8")
+      $(document).ready(function(){
+      });
+
+    block javascripts
+
+  body
+    .container
+      .masthead
+          ul.nav.nav-pills.pull-right
+            li.active
+              a(href='/') Home
+            li
+              a(href='/tv') Watch
+          h3.muted clipthetv
+      hr
+
+      block content
+
+      br
+      .footer
+        br
+        p &copy; 2012 
+          a(href="//twitter.com/chrisaiv", target="_new") @chrisaiv
+      //end container 
+

@@ -1,0 +1,30 @@
+extends layout
+
+block stylesheets
+  form.email{ display: none; }
+
+block javascripts
+  //jQuery form helper
+  script(type="text/javascript", charset="utf-8", src="/js/plugins/jquery.form.js")
+  //http://ghusse.github.com/jQRangeSlider
+  script(type="text/javascript", charset="utf-8", src="/js/plugins/jQRangeSlider/jQRangeSlider-min.js")
+  script(type="text/javascript", charset="utf-8", src="/js/plugins/jquery.mousewheel.min.js")
+  script(type="text/javascript", charset="utf-8")
+    $(document).ready(function(){
+      $.getScript("/js/com.chrisaiv.share.Email.js");
+      $.getScript("/js/com.chrisaiv.Remote.js");
+    });
+
+block content
+  .jumbotron
+  
+    h1 Remote
+    p.lead
+      | Use the trimmer tool to create start and end points.  Once you have the perfect clip, share it with you friends (e-mail only).
+  
+  .sliderContainer
+    #rangeExample
+    p.message
+      &nbsp;
+
+  include email-a-friend.jade
