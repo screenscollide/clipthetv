@@ -1,0 +1,25 @@
+section
+  div(id="message")
+    a(href="#") Send to a friend
+  form(id="email-a-friend", class="hide", action="#", accept-charset="utf-8")
+    legend Send to a friend
+    fieldset
+      ol
+        li
+          label(for="from") From:
+          input(type="text", id="from", name="from", value="mail@chrisaiv.com")
+        li
+          label(for="to")
+          input(type="text", id="to", name="to", value="cmendez@quickclip.it")
+        li
+          label(for="id") Video id:
+          input(type="text", id="videoId", name="videoId", placeholder="XXXXXX")
+        li
+          label(for="id") Clip Points (seconds):
+          input(type="text", id="startTime", name="startTime", class="input-small")
+          input(type="text", id="endTime", name="endTime", class="input-small")
+        li
+          label(for="message") Message:
+          textarea(id="message", name="message", rows="8", cols="40") Thought you might like this clip.
+      p
+        input(type="submit", class="btn", value="Send &rarr;")

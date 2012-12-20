@@ -1,0 +1,20 @@
+{
+  "name": "clipthetv",
+  "subdomain": "clipthetv",
+  "version": "0.0.1-6",
+  "private": true,
+  "scripts": {
+    "start": "app.js"
+  },
+  "dependencies": {
+    "express": "3.0.x",
+    "jade": "0.27.x",
+    "socket.io": "0.9.x",
+    "nodemailer": "0.3.x",
+    "sendgrid": "0.2.x",
+    "nodemon": "0.6.x"
+  },
+  "engines": {
+    "node": "0.8.x"
+  }
+}
