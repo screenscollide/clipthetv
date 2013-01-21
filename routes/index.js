@@ -3,7 +3,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'QuickClip' })
+  res.render('index', { title: 'Clip the TV' })
 };
 
 exports.tv = function(req, res){
@@ -14,10 +14,10 @@ exports.tv = function(req, res){
 	if( userAgent.match( screenSm ) ){
 		res.redirect('/remote');
 	} else if( userAgent.match( screenLg ) ){
-        res.render('tv', { title: 'Television' });
+        res.render('tv', { title: 'Clip the TV | Television' });
 	}	
 };
 
 exports.remote = function(req, res){
-  res.render('remote', { title: 'Remote Control' });
+  res.render('remote', { title: 'Clip the TV | Remote' });
 };

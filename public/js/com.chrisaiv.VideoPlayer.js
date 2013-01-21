@@ -12,7 +12,7 @@ var VideoPlayer = {
 	divId:          "videoDiv",
 	swfId:          "ytPlayer",
 	defaultInterval:  5000,
-	defaultVolume:  0,
+	defaultVolume:  90,
 	duration:       null,
 	ytplayer:       null,
 	socket:         null,
