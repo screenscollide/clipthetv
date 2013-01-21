@@ -10,21 +10,22 @@ html(lang="en")
     link(rel='stylesheet', href='/css/style.css')
     link(rel='stylesheet', href='http://bootswatch.com/cyborg/bootstrap.min.css')
     link(rel='stylesheet', href='/css/twitter/bootstrap-responsive.min.css')
-    
-    
-    link(rel="stylesheet", href="http://ghusse.github.com/jQRangeSlider/stable/demo/lib/jquery-ui/css/smoothness/jquery-ui-1.8.10.custom.css")
+    //jQuery UI
+    link(rel="stylesheet", href="/js/plugins/jquery-ui/css/smoothness/jquery-ui-1.8.10.custom.css")
+    //Slider CSS
     link(rel="stylesheet", href="/css/jQRangeSlider/classic.css")
-    //Slider Styling
     //link(rel="stylesheet", href="/css/jQRangeSlider/iThing.css")
 
-    script(type="text/javascript", charset="utf-8", src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js")
-    script(type="text/javascript", charset="utf-8", src="http://ghusse.github.com/jQRangeSlider/stable/demo/lib/jquery-ui/js/jquery-ui-1.8.16.custom.min.js")
+    script(type="text/javascript", charset="utf-8", src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js")
+    //jQuery UI 
+    script(type="text/javascript", charset="utf-8", src="/js/plugins/jquery-ui/js/jquery-ui-1.8.16.custom.min.js")
     
     script(type="text/javascript", charset="utf-8", src="/js/plugins/twitter/bootstrap.min.js")
     script(type="text/javascript", src='/socket.io/socket.io.js')
-
+    script(type="text/javascript", src='/js/plugins/jquery.jqia.dateFormat.js')
     script(type="text/javascript", charset="utf-8")
       $(document).ready(function(){
+        $.getScript("/js/global.js");
       });
 
     block javascripts
@@ -32,23 +33,19 @@ html(lang="en")
   body
     .container
       .masthead
-          ul.nav.nav-pills.pull-right
-            li.active
-              a(href='/') Home
-            li
-              a(href='/tv') Watch
-          h3.muted Second Screen Demo
-      hr
+        ul.nav.nav-pills.pull-left
+          li: a(href="http://screenscollide.com", target="_new") ScreensCollide.com
+          li: a(href='/') Home
+          li: a(href='/tv') Watch
+      a(href="https://github.com/screenscollide/clipthetv", target="_new")
+        img(style="position: absolute; top: 0; right: 0; border: 0;", src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png", alt="Fork me on GitHub")
 
       block content
 
-      br
-      .footer
-        br
-        p &copy; 2013
-          &nbsp;&nbsp;
+      hr
+      footer
+        p &copy; <span></span>
+          &nbsp;
           a(href="//twitter.com/screenscollide", target="_new") @screenscollide
           &nbsp;&nbsp;
           a(href="//twitter.com/chrisaiv", target="_new") @chrisaiv
-      //end container 
-
