@@ -7,7 +7,7 @@
 */
 
 var VideoPlayer = {
-	defaultVideoId: "K4Zo_XizA68",
+	defaultVideoId: "4fSdfAR5Qb4",
 	defaultQuality: "hd720",
 	divId:          "videoDiv",
 	swfId:          "ytPlayer",
