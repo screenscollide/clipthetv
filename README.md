@@ -32,6 +32,14 @@ Tools
 - jQRangeSlider
 - YouTube API v3
 
+Hosting Notes on AWS
+-----------
+Basic install of NodeJS on AWS
+http://iconof.com/blog/how-to-install-setup-node-js-on-amazon-aws-ec2-complete-guide/
+Further knowledge of NodeJS on AWS
+http://www.bennadel.com/blog/2321-How-I-Got-Node-js-Running-On-A-Linux-Micro-Instance-Using-Amazon-EC2.htm
+Basic Github commands
+http://rogerdudler.github.com/git-guide/
 
 Version
 
