@@ -1,7 +1,10 @@
 {
   "name": "clipthetv",
   "subdomain": "clipthetv",
-  "version": "0.0.1-7",
+  "domains": [
+    "clipthetv.screenscollide.com"
+  ],
+  "version": "0.0.1-8",
   "private": true,
   "scripts": {
     "start": "app.js"
@@ -11,10 +14,9 @@
     "jade": "0.27.x",
     "socket.io": "0.9.x",
     "nodemailer": "0.3.x",
-	"forever": "0.10.x",
-	"forever-monitor": "1.1.x",
+    "forever": "0.10.x",
+    "forever-monitor": "1.1.x",
     "sendgrid": "0.2.x",
-	"forever": "0.10.x",
     "nodemon": "0.6.x"
   },
   "engines": {
