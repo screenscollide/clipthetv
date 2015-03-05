@@ -58,4 +58,4 @@ MIT
 
 *Free Software, Fuck Yeah!*
 
-  [@chrisaiv]: mail@chrisaiv.com
+  [@chrismendezinla]: http://twitter.com/chrismendezinla
