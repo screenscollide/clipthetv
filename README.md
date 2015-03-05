@@ -45,11 +45,10 @@ Version
 
 1.0
 
-Tech
+Author
 -----------
 
-Dillinger uses a number of open source projects to work properly:
-
+[@chrismendezinla](http://twitter.com/chrismendezinla)
 
 License
 -
@@ -57,5 +56,3 @@ License
 MIT
 
 *Free Software, Fuck Yeah!*
-
-  [@chrismendezinla]: http://twitter.com/chrismendezinla
